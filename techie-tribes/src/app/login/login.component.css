@@ -1,0 +1,33 @@
+
+ 
+.bg {
+    /* The image used */
+    background-image: url("./../../assets/images/loginpage.jpg");
+    /* Full height */
+    width: 1400px;
+    height: 480px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+   
+  .previous {
+    background-color: green;
+    color: white;
+  }
+  
+   
+  .round {
+    border-radius: 50%;
+  }

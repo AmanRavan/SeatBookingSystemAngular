@@ -1,0 +1,25 @@
+button{
+    width:40px;
+    margin:10px;
+}
+
+.button-booked{
+    background-color: grey;
+    cursor:not-allowed;
+    pointer-events: none;
+}
+
+.button-available{
+    background-color:rgb(107, 167, 107);
+}
+
+.button-pending{
+    background-color:red;
+    cursor:not-allowed;
+    pointer-events: none;
+}
+
+.tabledisable{
+    cursor:not-allowed;
+    pointer-events:none;
+}

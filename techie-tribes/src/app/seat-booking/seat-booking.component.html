@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-6">
+        <table [ngClass]="{'tabledisable':isdisable}">
+            <tr *ngFor=" let row of rows">
+                <td
+                    *ngFor="let seat of seatDetailsList |slice:(row*seatArrangement.columns)-8:(row*seatArrangement.columns) ">
+                    <button
+                        [ngClass]="{'button-booked':seat.seatStatus=='Booked', 'button-available':seat.seatStatus=='available',
+                        'button-pending':seat.seatStatus=='Pending'}"
+                        (click)="bookSeat(seat.seatId)">{{seat.seatName}}
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- <div *ngFor="let seat of seatDetailsList">
+            <button
+                [ngClass]="{'button-booked':seat.seat_status=='Booked', 'button-available':seat.seat_status=='Available'}"
+                (click)="bookSeat(seat.seat_no)">{{seat.seat_no}}
+            </button>
+        </div> -->
+    </div>
+</div>
+<!-- ngIf="seat.seat_status=='booked'" class="button-booked" -->

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-">
+      <table>
+        <tr *ngFor="let request of requestList">
+          <td>request.bookingId</td>
+          <td>request.seatId</td>
+          <td>request.emailId</td>
+          <td><button (click)="updateBookingRequest({seatId:request.seatId, seatStatus:'Approved'})">Approve</button></td>
+          <td><button (click)="updateBookingRequest({seatId:request.seatId, seatStatus:'Cancelled'})">Cancel</button></td>
+        </tr>
+      </table>
+  
+    </div>
+  </div>

@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(231, 219, 219, 0.2);
+  margin: 8px;
+}
+
+
+
+.container {
+  padding: 0 16px;
+  text-align: center;
+  background-color: #f4f6fc;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body,
+html {
+height: 100%;
+}
+
+.bg {
+/* The image used */
+background-image: url("./../../assets/images/loginpage.jpg");
+/* Full height */
+height: 480px;
+
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
